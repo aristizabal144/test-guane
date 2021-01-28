@@ -12,10 +12,16 @@
 
 
         <b-row >
-            <b-col cols="1.0"  v-for="item in accesorials" v-bind:key="item" style="margin-right: 40px;">
+            <b-col cols="1.0"  v-for="item in accesorials" v-bind:key="item.name" style="margin-right: 40px;">
+                <b-form-checkbox-group
+                    id="checkbox-group-2"
+                    v-model="selected"
+                    name="flavour-2"
+                >
 
-                <b-form-checkbox :value="item" >{{item}}</b-form-checkbox>
+                <b-form-checkbox :v-model="item.name" :value="item.name" :id="item.name">{{item.name}}</b-form-checkbox>
 
+                </b-form-checkbox-group>
             </b-col>
         </b-row> 
 
@@ -26,7 +32,8 @@
 <script>
 export default {
   data : () => ({
-      accesorials: ['Hazmat', 'Bonded', 'Tarps', 'Airport Delivery TSA', 'Oversize/Overweight Permits', 'Escorts', 'Team Drivers', 'Non Stackable']
+      selected: [],
+      accesorials: [{select: false, name:'Hazmat'}, {select: false, name:'Bonded'}, {select: false, name:'Tarps'}, {select: false, name:'Airport Delivery TSA'}, {select: false, name:'Oversize/Overweight Permits'}, {select: false, name:'Escorts'}, {select: false, name:'Team Drivers'}, {select: false, name:'Non Stackable'}]
   }),
 
   props: {
@@ -34,6 +41,13 @@ export default {
     color: String,
     zip: String,
     city: String,
+    accessorials_props: Array
+  },
+
+  created: function () { 
+
+      this.selected = this.accessorials_props;
+
   }
 }
 </script>

@@ -16,7 +16,7 @@
         <b-row style="margin-top:30px"> 
             <b-col cols="12">
                 <div> 
-                    <Accessorial title="Accesorials" color="#F1B82E"/>
+                    <Accessorial title="Accesorials" :accessorials_props="accesorials" color="#F1B82E"/>
                 </div>
             </b-col>
         </b-row> 
