@@ -1,0 +1,69 @@
+{
+    "graph_conversation_id": "",
+    "graph_id": "1234123412341234",
+    "is_active": true,
+    "assigned_to": "JJ",
+    "is_assigned": true,
+    "client_email": "guane@guane.com.co",
+    "client_name": "guane",
+    "client_domain": "guane.com.co",
+    "subject": "GA 30083 to FL 33178",
+    "html": "",
+    "hauls": [
+        {
+            "guid": "c983676527664b04b77318f0fb74db2b",
+            "zip_from": "30083",
+            "zip_to": "33178",
+            "city_from": "Stone Mountain, GA",
+            "state_from": "",
+            "state_to": "",
+            "city_to": "Miami, FL",
+            "accessorials_from": [
+                "Non-Hazmat"
+            ],
+            "accessorials_to": [
+                "Non-Hazmat"
+            ],
+            "accessorials": [
+                "Tarps",
+                "Airport Delivery TSA"
+            ],
+            "commodity": [
+                {
+                    "nmfc": "",
+                    "nmfc_calculated": "",
+                    "dimensions": "48.0 x 48.0 x 48.0 inch",
+                    "hu_count": "1 Pallet",
+                    "weight": "37479.0 lb",
+                    "description": "",
+                    "contribution": "100%",
+                    "oversize": false
+                }
+            ],
+            "commercial_value": "",
+            "linear_feet": "",
+            "mode_id": "",
+            "mode": "",
+            "route": {
+                "dat": {
+                    "min": "2.70",
+                    "max": "3.62",
+                    "average": "3.04",
+                    "suggested": "2,039"
+                },
+                "rate_iq": {
+                    "dat": "3.04",
+                    "truckStop_posted": "2.78",
+                    "truckStop_paid": "3.13",
+                    "total_historic_rate": "3.0116666666666667"
+                },
+                "pc_miler": {
+                    "tolls": "70.58",
+                    "miles": "669.708"
+                }
+            },
+            "oversize": null,
+            "equipmentType": "V"
+        }
+    ]
+}
